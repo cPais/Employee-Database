@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+<beans>
+	<bean id="GameOfThrones_Database" class="application.DBManager">
+		<constructor-arg index="0" value="${database_url}" />
+		<constructor-arg index="1" value="${database_userID}" />
+		<constructor-arg index="2" value="${database_password}" />
+	  	<property name="insertionSQL" value="${insertionSQL}" />
+	
+	</bean>
+	
+	
+	
+	
+	<!--  
+	
+	<bean id="defaultPointA" class="LSpringPackage.Point">
+				<constructor-arg index="0" value="20" />
+				<constructor-arg index="1" value="0" />
+	</bean>
+	
+	<bean id="defaultPointB" class="LSpringPackage.Point">
+				<property name="x" value="${PointB.pointX}" />
+				<property name="y" value="${PointB.pointY}" />
+			</bean>
+	-->
+	<bean class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations" value="beans.properties"/>
+	</bean>
+	
+	
+</beans>
+
