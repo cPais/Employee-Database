@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane minHeight="-Infinity" minWidth="-Infinity" prefHeight="467.0" prefWidth="682.0" style="-fx-background-color: #385634;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FrontEndController">
+   <children>
+      <TableView fx:id="table" layoutX="44.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="595.0">
+        <columns>
+            <TableColumn fx:id="IDColumn" 	      editable="false" minWidth="-Infinity" prefWidth="60.0"  text="ID" />
+            <TableColumn fx:id="nameColumn" 	  editable="false" minWidth="100.0" 	prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="emailColumn" 	  editable="false" minWidth="100.0" 	prefWidth="100.0" text="Email" />
+            <TableColumn fx:id="allegianceColumn" editable="false" minWidth="-Infinity" prefWidth="114.0" text="Department" />
+            <TableColumn fx:id="positionColumn"   editable="false" minWidth="-Infinity" prefWidth="125.0" text="Position" />
+            <TableColumn fx:id="salaryColumn" 	  editable="false" minWidth="-Infinity" prefWidth="79.0"  text="Salary" />
+        </columns>
+      </TableView>
+      <Pane layoutX="-56.0" layoutY="406.0" prefHeight="65.0" prefWidth="795.0" style="-fx-background-color: #54824e;">
+         <children>
+            <TextField fx:id="addNameField" layoutX="144.0" layoutY="6.0" prefHeight="25.0" prefWidth="59.0" promptText="Name..." />
+            <TextField fx:id="addSalaryField" layoutX="589.0" layoutY="7.0" prefHeight="25.0" prefWidth="59.0" promptText="Salary..." />
+            <ComboBox fx:id="addAllegianceField" layoutX="343.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Department..." />
+            <TextField fx:id="deletePositionField" layoutX="465.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Position..." />
+            <ComboBox fx:id="deleteAllegianceField" layoutX="343.0" layoutY="36.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Department..." />
+            <TextField fx:id="deleteNameField" layoutX="144.0" layoutY="33.0" prefHeight="25.0" prefWidth="59.0" promptText="Name..." />
+            <TextField fx:id="deleteSalaryField" layoutX="589.0" layoutY="35.0" prefHeight="25.0" prefWidth="59.0" promptText="Salary..." />
+            <TextField fx:id="addPositionField" layoutX="465.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Position..." />
+            <Button fx:id="deleteButton" layoutX="667.0" layoutY="33.0" mnemonicParsing="false" text="Delete" />
+            <Button fx:id="addButton" layoutX="667.0" layoutY="5.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="50.0" text="Add" />
+            <TextField fx:id="deleteEmailField" layoutX="216.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Email..." />
+            <TextField fx:id="addEmailField" layoutX="216.0" layoutY="6.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="114.0" promptText="Email..." />
+            <TextField fx:id="deleteIDField" layoutX="77.0" layoutY="33.0" prefHeight="25.0" prefWidth="50.0" promptText="ID..." />
+            <TextField fx:id="addIDField" layoutX="77.0" layoutY="6.0" prefHeight="25.0" prefWidth="50.0" promptText="ID..." />
+         </children>
+      </Pane>
+   </children>
+</Pane>
